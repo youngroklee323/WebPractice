@@ -3,9 +3,24 @@
 <head>
   <title>Ships</title>
   <style>
-    a {
-      color:rgb(0, 183, 255);
+    ::selection {
+      color: rgb(255, 255, 255);
+      background: rgb(98, 192, 255);
     }
+    a {
+      color: rgb(0, 162, 255);
+      text-decoration: none;
+    }
+    #active{
+      color: red;
+    }
+    .saw{
+      color:grey;
+    }
+    h1 {
+      font-size: 40px;
+      text-align: center;
+      }
   </style>
 </head>
 
@@ -14,8 +29,8 @@
   <h2><a href="index.html">Ships</a></h2>
 
   <ul>
-    <li><a href="Python.html">Python</a></li>
-    <li><a href="federal_corvette.html" style="color:red">Federal Corvette</a></li>
+    <li><a href="Python.html" class="saw">Python</a></li>
+    <li><a href="federal_corvette.html"class="saw" id="active"> Federal Corvette</a></li>
   </ul>
 <h3>what is elite dangerous?</h3>
   <p>Elite Dangerous is a massively multiplayer space epic and the fourth installment in the legendary Elite series, the longest running space simulation series in history.[1] It was developed and published by Frontier Developments with David Braben as the director. The Windows PC version launched on December 16, 2014. It was partially funded via a Kickstarter campaign.[2] The Mac version was released on May 12, 2015,[3] but Mac OS support was dropped on December 11, 2018 due to technical barriers.[4] The Xbox One version launched on October 6, 2015,[5] followed by the PlayStation 4 version on June 27, 2017.[6] The Xbox One and PlayStation 4 versions can be played on the Xbox Series X and PlayStation 5 respectively via backwards compatibility,[7][8] but no new ports optimized specifically for next-generation consoles are currently planned.[9]</p>
