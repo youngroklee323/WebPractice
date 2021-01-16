@@ -3,10 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gird</title>
+    <style>
+        div{
+            border: 5px solid grey;
+        }
+        #grid{
+            border: 5px solid pink;
+            display: grid;
+            grid-template-columns: 150px 2fr;
+        }
+    </style>
 </head>
 <body>
-<span>NAVIGATION</span>
-<span>ARTICLE</span>
+<div id="grid">
+    <div>NAVIGATION</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis beatae ab saepe iusto excepturi, sed similique repellendus voluptate incidunt adipisci laborum, praesentium necessitatibus perferendis recusandae accusantium delectus consequuntur dolores veritatis!</div>
+</div>
+
 </body>
 </html>
