@@ -18,7 +18,7 @@
     }
     #Menu {
       display: grid;
-      grid-template-columns: 0.8fr 2.2fr;
+      grid-template-columns: 150px 2fr;
       padding-left: 30px;
     }
     ul {
@@ -31,7 +31,20 @@
     #content {
       padding-left: 30px;
     }
-
+    @media (max-width: 800px) {
+      #Menu {
+      display: block;
+      }
+      #left_menu{
+      border-right: none
+      }
+      #GNB{
+      border-bottom: none;
+      }
+      #content{
+        padding-left: 0px;
+      }
+    }
   </style>
 </head>
 
