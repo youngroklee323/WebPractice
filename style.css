@@ -1,0 +1,41 @@
+body {
+    margin: 0px;
+  }
+  a{
+    color: rgb(111, 169, 184);
+    text-decoration: none;
+  }
+
+  #GNB {
+    font-size: 20px rgb(180, 180, 180);
+    text-align: center;
+    border-bottom: solid grey 1px;
+  }
+  #Menu {
+    display: grid;
+    grid-template-columns: 150px 2fr;
+    padding-left: 30px;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  #left_menu{
+    border-right: solid grey 1px;
+  }
+  #content {
+    padding-left: 30px;
+  }
+  @media (max-width: 800px) {
+    #Menu {
+    display: block;
+    }
+    #left_menu{
+    border-right: none
+    }
+    #GNB{
+    border-bottom: none;
+    }
+    #content{
+      padding-left: 0px;
+    }
