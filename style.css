@@ -1,41 +1,95 @@
 body {
-    margin: 0px;
-  }
-  a{
-    color: rgb(111, 169, 184);
-    text-decoration: none;
-  }
-
-  #GNB {
-    font-size: 20px rgb(180, 180, 180);
-    text-align: center;
-    border-bottom: solid grey 1px;
-  }
+  margin: 0px;
+}
+a {
+  color: rgb(111, 169, 184);
+  text-decoration: none;
+}
+#GNB {
+  font-size: 20px rgb(180, 180, 180);
+  text-align: center;
+  border-bottom: solid grey 1px;
+}
+#Menu {
+  display: grid;
+  grid-template-columns: 150px 2fr;
+  padding-left: 30px;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+#left_menu{
+  border-right: solid grey 1px;
+}
+#content {
+  padding-left: 30px;
+}
+@media (max-width: 800px) {
   #Menu {
-    display: grid;
-    grid-template-columns: 150px 2fr;
-    padding-left: 30px;
-  }
-  ul {
-    list-style: none;
-    padding-left: 0;
+    display: block;
   }
   #left_menu{
-    border-right: solid grey 1px;
-  }
-  #content {
-    padding-left: 30px;
-  }
-  @media (max-width: 800px) {
-    #Menu {
-    display: block;
-    }
-    #left_menu{
     border-right: none
-    }
-    #GNB{
+  }
+  #GNB{
     border-bottom: none;
-    }
-    #content{
-      padding-left: 0px;
-    }
+  }
+  #content{
+    padding-left: 0px;
+  }
+}
+
+.themeChangeBtn{
+  color: black;
+  padding: 10px 20px;
+  /* padding: top right bottom left */
+  /* padding: top&bottom left&right */
+  /* padding: top left&right bottom */
+  border: 1px solid #000;
+  border: 1px;
+  border-right-width: 1px;
+  border-right-color: #000;
+  border-right-style: solid;
+  /* dot, */
+  border-left-width: 1px;
+  border-bottom-width: 1px;
+  border-top-width: 1px;
+  background-color: blue;
+}
+
+h3 {
+  background: linear-gradient(#e66465, #9198e5);
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px rgba(36, 36, 36, 0.26)
+}
+
+
+.toggle {
+  padding: 20px;
+  display: block;
+}
+.toggle .wrap {
+  border-radius: 999px;
+  background-color: #8888;
+  height: 50px;
+  width: 100px;
+  position: relative;
+}
+.toggle .btn {
+  background-color: rgb(243, 43, 43);
+  border-radius: 999px;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  transform: translateY(-50%);
+  transition: left 0.3s ease-in-out;
+}
+.toggle input:checked + .wrap .btn {
+  left: calc(50% + 3px);
+}
